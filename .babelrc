@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    [
+      "transform-react-remove-prop-types",
+      {
+        "removeImport": true
+      }
+    ],
+    "@babel/plugin-proposal-optional-chaining"
+  ],
+  "presets": [
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [">2%", "not dead", "not ie <= 11"]
+        }
+      }
+    ]
+  ]
+}
