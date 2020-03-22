@@ -36,7 +36,7 @@ const IndexPage = () => (
         </>
       }
       descriptionMaxWidth="324"
-      socialIcons={['github', 'linkedin', 'instagram']}
+      socialIcons
     />
     <Section title="Como posso te ajudar hoje?" titleMaxWidth="225">
       <Features data={features} />

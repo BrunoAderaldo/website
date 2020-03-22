@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui'
 import { Container, Row, Col } from 'components/Grid'
+import SocialIcons from 'components/SocialIcons'
 
 export default ({
   title,
@@ -34,6 +35,7 @@ export default ({
             >
               {description}
             </Styled.p>
+            {socialIcons && <SocialIcons />}
           </Col>
         </Row>
       </Container>

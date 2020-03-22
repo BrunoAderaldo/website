@@ -15,6 +15,17 @@ module.exports = {
         path: `${__dirname}/src/assets/images`
       }
     },
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        prettier: true, // use prettier to format JS code output (default)
+        svgo: true, // use svgo to optimize SVGs (default)
+        svgoConfig: {
+          removeViewBox: false, // remove viewBox when possible (default)
+          cleanupIDs: true // remove unused IDs and minify remaining IDs (default)
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
